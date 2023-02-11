@@ -1,0 +1,13 @@
+.nav-item {
+  padding: space("sm");
+  transition: background-color 0.2s ease-in;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(palette("primary"), 0.8);
+  }
+
+  &__selected {
+    background-color: rgba(palette("primary"), 0.7);
+  }
+}

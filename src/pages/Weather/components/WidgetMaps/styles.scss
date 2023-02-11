@@ -1,0 +1,28 @@
+@import "~leaflet/dist/leaflet.css";
+
+.widget-maps {
+  @include glassBox;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__tabs {
+    display: flex;
+    margin-bottom: space("xs");
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > div {
+      padding-bottom: space("md");
+    }
+    &__item {
+      display: inline-flex;
+      i {
+        margin-right: space("xs");
+      }
+    }
+  }
+}
